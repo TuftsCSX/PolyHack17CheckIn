@@ -2,7 +2,7 @@ $(document).bind('scan_complete', scan);
 function scan() {
     
     cordova.plugins.barcodeScanner.scan(
-    function (result) {
+    function scan() {
         url = 'https://script.google.com/macros/s/AKfycbxS6RO5BMZWfI1PcLBTIGKGE85h5BnSS7PxD7Z88xiLnRFna-9F/exec'; // script url from web app
         cordova.plugins.barcodeScanner.scan( //Open barcode scanning plugin
         function (result) {
