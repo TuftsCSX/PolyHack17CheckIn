@@ -11,7 +11,7 @@ function scan() {
             {
                 hyper.log(response.status); //Log JSON
                 hyper.log(response.data);
-                if (response.data.localeCompare('test1') == 0) {
+                if (response.data != '{"results":[]}') {
                     navigator.vibrate([100,75,100]);
                     var audio = new Audio('glass_ping.mp3'); //Play sound
                     audio.play();
